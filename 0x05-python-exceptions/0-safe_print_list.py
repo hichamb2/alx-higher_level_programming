@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
     try:
         for i in my_list:
             if j < x:
-                print(i,end="")
+                print(f"{i}", end="")
                 j += 1
             else:
                 break
