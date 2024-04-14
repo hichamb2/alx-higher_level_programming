@@ -3,6 +3,7 @@
 
 
 class Square:
+    """initialisation of class Square"""
     def __init__(self, size=0):
         self.size = size
 
@@ -30,4 +31,4 @@ class Square:
                 print("#", end="")
             print()
         print()
-        return()
+        return ()
