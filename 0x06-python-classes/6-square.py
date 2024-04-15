@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""create a class"""
-
+"""define class Square"""
 
 
 class Square:
-    """define class Square"""
+    """initialisation class Square"""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
@@ -34,10 +33,11 @@ class Square:
         if value[0] < 0 and value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
-    
+
     def area(self):
         """calcul of area"""
         return (self.__size * self.__size)
+
     def my_print(self):
         """difine a method that print square"""
         if self.__size == 0:
