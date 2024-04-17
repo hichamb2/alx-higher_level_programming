@@ -55,5 +55,5 @@ class Rectangle:
         rec.pop()
         return ("".join(rec))
 
-    def __repr__(self):
-        return (f"Rectangle({str(self.__width)}, {str(self.__height)})")
+    """def __repr__(self):
+        return (f"Rectangle({str(self.__width)}, {str(self.__height)})")"""
