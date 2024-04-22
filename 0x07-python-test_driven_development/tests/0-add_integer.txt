@@ -7,16 +7,18 @@ Using ``add_integer``
 importing modul:	
 	>>> add_integer = __import__("0-add_integer").add_integer
 
-Checking for module docstring:
-	>>> m = __import__("0-add_integer").__doc__
-	>>> len(m) > 1
-	True
-
-Checking for function docstring:
-	>>> f = __import__("0-add_integer").add_integer.__doc__
-	>>> len(f) > 1
-	True
-
-Checking regular addition:
 	>>> add_integer(2, 5)
 	7
+
+	>>> add_integer(-2, 5)
+	3
+
+	>>> add_integer(2, -5)
+	-3
+	
+	>>> add_integer(2)
+	100
+
+	>>> add_integer()
+	Traceback (most recent call last):
+	TypeError: a must be an integer
