@@ -7,11 +7,11 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     i = 0
-    while(i  < len(text)):
+    while (i < len(text)):
         if text[i] == '.' or text[i] == '?' or text[i] == ':':
             print("{}".format(text[i]))
             print("\n", end="")
-            while text[i + 1] == ' ':
+            while (text[i + 1] == ' '):
                 i = i + 1
         else:
             print("{}".format(text[i]), end="")
