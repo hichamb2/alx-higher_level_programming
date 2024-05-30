@@ -1,1 +1,2 @@
+--descri
 SHOW DATABASES;
